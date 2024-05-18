@@ -26,9 +26,14 @@
   background-color: var(--color-grey-dark-1);
 
   flex: 0 0 18%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .hotel-view {
+  height: 50rem; //! DA RIMUOVERE
   background-color: #fff;
   background-color: #f40;
 
