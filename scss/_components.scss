@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
 
-  @media only screen and (max-width: $bp-smallest) {
+  @media only screen and (max-width: $bp-xsmall) {
     order: 1;
     flex: 0 0 100%;
     background-color: var(--color-grey-light-2);
@@ -253,6 +253,13 @@
       font-size: 1.8rem;
       padding: 1.25rem 2rem;
     }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.3rem;
+      padding: 1.25rem 1rem;
+      padding-left: 0.5rem;
+      text-align: center;
+    }
   }
 
   &__stars {
@@ -265,6 +272,11 @@
     width: 1.75rem;
     height: 1.75rem;
     fill: var(--color-primary);
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
   }
 
   &__icon-location {
@@ -276,6 +288,10 @@
     display: flex;
     align-items: center;
     margin-right: 3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-right: 1rem;
+    }
   }
 
   &__rating {
@@ -304,11 +320,12 @@
     }
 
     &-count {
-      font-size: 0.8rem;
+      font-size: 1.2rem;
       text-transform: uppercase;
 
       @media only screen and (max-width: $bp-small) {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
+        text-align: center;
       }
     }
   }
